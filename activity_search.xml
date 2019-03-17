@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".SearchActivity">
+
+    <EditText
+        android:id="@+id/SearchText"
+        android:layout_width="270dp"
+        android:layout_height="61dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="57dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Search"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColorHint="@android:color/black" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/SearchText"
+        android:layout_toEndOf="@+id/SearchText"
+        android:onClick="SearchDB"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Search"
+        android:onClick="SearchDB"
+        android:textSize="30sp" />
+</RelativeLayout>
